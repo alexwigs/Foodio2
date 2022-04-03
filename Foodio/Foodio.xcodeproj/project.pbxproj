@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15027DB27FA0772000A73D1 /* foodiologo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C15027DA27FA0772000A73D1 /* foodiologo.jpeg */; };
 		C162ACA627E8D1F9006748C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162ACA527E8D1F9006748C2 /* AppDelegate.swift */; };
 		C162ACA827E8D1F9006748C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162ACA727E8D1F9006748C2 /* SceneDelegate.swift */; };
 		C162ACAA27E8D1F9006748C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162ACA927E8D1F9006748C2 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C15027DA27FA0772000A73D1 /* foodiologo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodiologo.jpeg; sourceTree = "<group>"; };
 		C162ACA227E8D1F9006748C2 /* Foodio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C162ACA527E8D1F9006748C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C162ACA727E8D1F9006748C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				C162ACD527E977DE006748C2 /* input.txt */,
 				C162ACDC27ED02E7006748C2 /* IMG_2424.jpeg */,
 				C162ACDE27ED11EB006748C2 /* IMG_4981.jpg */,
+				C15027DA27FA0772000A73D1 /* foodiologo.jpeg */,
 				C162ACE027ED15B3006748C2 /* IMG_4982.jpg */,
 			);
 			path = Foodio;
@@ -280,6 +283,7 @@
 				C162ACAF27E8D201006748C2 /* Assets.xcassets in Resources */,
 				C162ACDD27ED02E7006748C2 /* IMG_2424.jpeg in Resources */,
 				C162ACE127ED15B3006748C2 /* IMG_4982.jpg in Resources */,
+				C15027DB27FA0772000A73D1 /* foodiologo.jpeg in Resources */,
 				C162ACDF27ED11EB006748C2 /* IMG_4981.jpg in Resources */,
 				C162ACAD27E8D1F9006748C2 /* Main.storyboard in Resources */,
 				C162ACD627E977DE006748C2 /* input.txt in Resources */,
@@ -498,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dubbie.Foodio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -517,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dubbie.Foodio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
