@@ -27,7 +27,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     // arrays of images
     // will need three, one for each zip code
-    let im: [UIImage] = [#imageLiteral(resourceName: "initial.jpeg"),#imageLiteral(resourceName: "initial.jpeg"),#imageLiteral(resourceName: "initial.jpeg")]
+    let im: [UIImage] = [#imageLiteral(resourceName: "initialpop.jpeg"),#imageLiteral(resourceName: "initialpop.jpeg"),#imageLiteral(resourceName: "initialpop.jpeg")]
     
 
     //arrays of restaurants.
