@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var totalArr1 = [String]();
     var totalArr2 = [String]();
     var h = [String]();
+    var foodarr = [String]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +98,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var i = 0
         
         let foo = String(foodText.text ?? "")
+        
+        let cod = foodText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         print(g)
         
         //check if input food is in restaurant

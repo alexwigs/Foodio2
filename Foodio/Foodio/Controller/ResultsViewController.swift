@@ -31,23 +31,28 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
 
     //arrays of restaurants.
-    let a = [("Raising Cane's\nOak Lawn, IL, 60453\nhttps://www.raisingcanes.com/\n(708) 422-3736"),
-             ("Jalisco Express Restaurant\nOak Lawn, IL, 60453\nhttps://www.jaliscoexpressrestaurantofoaklawn.com/\n(708) 423-6476"),
-             ("Fry the Coop\nOak Lawn, IL, 60453\nhttps://www.frythecoop.com/\n(708) 576-8645"),
-             ("Shake Shack\nOak Lawn, IL, 60453\nhttps://www.shakeshack.com/home#/\n(708) 330-6530")]
+    let a = [("Raising Cane's\n1106 Cicero Ave, Oak Lawn, IL, 60453\nhttps://www.raisingcanes.com/\n(708) 422-3736"),
+             ("Jalisco Express Restaurant\n10846 S Cicero Ave, Oak Lawn, IL, 60453\nhttps://www.jaliscoexpressrestaurantofoaklawn.com/\n(708) 423-6476"),
+             ("Fry the Coop\n5128 W 95th St, Oak Lawn, IL, 60453\nhttps://www.frythecoop.com/\n(708) 576-8645"),
+             ("Shake Shack\n4071 W 95th St, Oak Lawn, IL, 60453\nhttps://www.shakeshack.com/home#/\n(708) 330-6530")]
     
-    let b = [("Pop's Italian Beef\nChicago, IL, 60655\nhttps://www.popsbeef.com/location/chicago/\n(773) 239-1243"),
-             ("Wonder Burger Grill\nChicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
-             ("Subway\nChicago, IL, 60655\nhttps://www.ordersubway.com/\n(773) 881-3424"),
-             ("Waldo Cooney's Pizza\nChicago, IL, 60655\nhttps://www.waldocooneyspizza.com/\n(773) 825-8019")]
+    let b = [("Pop's Italian Beef\n10337 S Kedzie Ave, Chicago, IL, 60655\nhttps://www.popsbeef.com/location/chicago/\n(773) 239-1243"),
+             ("Wonder Burger Grill\n3333 West 111th St, Chicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
+             ("Subway\n10319 S Pulaski, Chicago, IL, 60655\nhttps://www.ordersubway.com/\n(773) 881-3424"),
+             ("Waldo Cooney's Pizza\n2410 W 111th St, Chicago, IL, 60655\nhttps://www.waldocooneyspizza.com/\n(773) 825-8019")]
     
-    let c = [("Mickey's Gyros\nOak Forest, IL, 60452\nhttps://www.mickeysgyrosoakforest.com/\n(708) 687-1400"),
-             ("#1 Chop Suey\nOak Forest, IL, 60452\nhttps://www.oakforestchopsuey.com/\n(708) 687-8598"),
-             ("KFC\nOak Forest, IL, 60452\nhttps://www.kfc.com/\n(708) 687-0858"),
-             ("The Original Pancake House\nOak Forest, IL, 60452\nhttps://www.ophchiagoland.com/\n(708) 687-8282")]
+    let c = [("Mickey's Gyros\n15221 Cicero Ave, Oak Forest, IL, 60452\nhttps://www.mickeysgyrosoakforest.com/\n(708) 687-1400"),
+             ("#1 Chop Suey\n15833 Central Ave, Oak Forest, IL, 60452\nhttps://www.oakforestchopsuey.com/\n(708) 687-8598"),
+             ("KFC\n5301 W 159th St, Oak Forest, IL, 60452\nhttps://www.kfc.com/\n(708) 687-0858"),
+             ("The Original Pancake House\n5140 159th St, Oak Forest, IL, 60452\nhttps://www.ophchiagoland.com/\n(708) 687-8282")]
     
     
-    let d = [("Please enter a valid zip code and food!"),(""),(""),("")]
+    let d = [("Bartolini's\n14420 Pulaski Rd, Midlothian, IL, 60445\nhttps://www.bartolinis.com/\n(708) 396-2333"),
+             ("Gum Wah Restaurant\n3700 147th St, Midlothian, IL, 60445\nhttps://www.gumwayrestaurant.com/\n(708) 389-1100"),
+             ("Burger King\n14300 S Cicero Ave, Midlothian, IL, 60445\nhttps://www.bk.com/\n(708) 597-9520"),
+             ("The Original Hog Wild\n14933 S Pulaski Rd, Midlothian, IL, 60445\nhttps://www.thehogwild.com/\n(708) 371-9005")]
+    
+    let e = [("Please enter a valid zip code and food!"),(""),(""),("")]
     
     
     override func viewDidLoad() {
@@ -103,10 +108,16 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             food = c [indexPath.row]
             
 
-        } else {
+        } else if(z == "60445") {
             
             ima = im [indexPath.row]
             food = d [indexPath.row]
+            
+
+        } else {
+            
+            ima = im [indexPath.row]
+            food = e [indexPath.row]
             
         }
         
