@@ -27,24 +27,27 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     // arrays of images
     // will need three, one for each zip code
-    let im: [UIImage] = [#imageLiteral(resourceName: "initialpop.jpeg"),#imageLiteral(resourceName: "initialpop.jpeg"),#imageLiteral(resourceName: "initialpop.jpeg")]
+    let im: [UIImage] = [#imageLiteral(resourceName: "canesl.jpeg"),#imageLiteral(resourceName: "jaill.jpeg"),#imageLiteral(resourceName: "frythel.jpeg"),#imageLiteral(resourceName: "shakesh.jpeg")]
     
 
     //arrays of restaurants.
-    let a = [("Mcdonalds: 708-567-8989\nhttps:mcdonalds.com"),
-             ("Popeyes 103rd and kedzie 60546\n708-567-3282\nhttps:popeyes.com"),
-             ("Jimmy Johns")]
+    let a = [("Raising Cane's\nOak Lawn, IL, 60453\nhttps://www.raisingcanes.com/\n(708) 422-3736"),
+             ("Jalisco Express Restaurant\nOak Lawn, IL, 60453\nhttps://www.jaliscoexpressrestaurantofoaklawn.com/\n(708) 423-6476"),
+             ("Fry the Coop\nOak Lawn, IL, 60453\nhttps://www.frythecoop.com/\n(708) 576-8645"),
+             ("Shake Shack\nOak Lawn, IL, 60453\nhttps://www.shakeshack.com/home#/\n(708) 330-6530")]
     
-    let b = [("Chick-Fil-A: 708-567-8989\nhttps:mcdonalds.com"),
-             ("Canes 103rd and kedzie 60860\n708-567-3282\nhttps:popeyes.com"),
-             ("Freddies")]
+    let b = [("Pop's Italian Beef\nChicago, IL, 60655\nhttps://www.popsbeef.com/location/chicago/\n(773) 239-1243"),
+             ("Wonder Burger Grill\nChicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
+             ("Subway\nChicago, IL, 60655\nhttps://www.ordersubway.com/\n(773) 881-3424"),
+             ("Waldo Cooney's Pizza\nChicago, IL, 60655\nhttps://www.waldocooneyspizza.com/\n(773) 825-8019")]
     
-    let c = [("Sharks: 708-567-8989\nhttps:mcdonalds.com"),
-             ("McDonalds 103rd and kedzie 60860\n708-567-3282\nhttps:popeyes.com"),
-             ("Portillos")]
+    let c = [("Mickey's Gyros\nOak Forest, IL, 60452\nhttps://www.mickeysgyrosoakforest.com/\n(708) 687-1400"),
+             ("#1 Chop Suey\nOak Forest, IL, 60452\nhttps://www.oakforestchopsuey.com/\n(708) 687-8598"),
+             ("KFC\nOak Forest, IL, 60452\nhttps://www.kfc.com/\n(708) 687-0858"),
+             ("The Original Pancake House\nOak Forest, IL, 60452\nhttps://www.ophchiagoland.com/\n(708) 687-8282")]
     
     
-    let d = [("Please enter a valid zip code and food!"),(""),("")]
+    let d = [("Please enter a valid zip code and food!"),(""),(""),("")]
     
     
     override func viewDidLoad() {
@@ -82,19 +85,19 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
         var ima : UIImage
         
         //check which zip user entered and display correct arrays
-        if(z == "60546") {
+        if(z == "60453") {
         
             ima = im [indexPath.row]
             food = a [indexPath.row]
             
             
-        } else if(z == "60324") {
+        } else if(z == "60655") {
             
             ima = im [indexPath.row]
             food = b [indexPath.row]
             
         }
-        else if(z == "60655") {
+        else if(z == "60452") {
             
             ima = im [indexPath.row]
             food = c [indexPath.row]
