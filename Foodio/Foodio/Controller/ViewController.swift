@@ -24,6 +24,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //keyboard will block text field for zip code because the view is not a scroll view
+        //can update this later after learning more about scroll views.
+        setUp()
+        
+        
         // Do any additional setup after loading the view.
         
         //set error label to empty so user cant see it
@@ -34,6 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         findFoodBut.layer.borderWidth = 2
         findFoodBut.layer.borderColor = UIColor.white.cgColor
         findFoodBut.tintColor = UIColor.white
+        
         
         //input file and put into a string
         
@@ -147,7 +154,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    //add done bar to keyboard so user can dismiss keyboard
     
+    func setUp() {
+        let bar = UIToolbar()
+        
+        let done = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMy))
+        
+        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        bar.items = [space, space, done]
+        bar.sizeToFit()
+        
+        zipText.inputAccessoryView = bar
+        foodText.inputAccessoryView = bar
+    }
+    
+    @objc func dismissMy(){
+        view.endEditing(true)
+    }
     
     
     //validate input
@@ -264,6 +289,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if segue.identifier == "goToResult" {
             
+            let clzip = zipText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
             let destinationVC = segue.destination as! ResultsViewController
             //destinationVC.total = String(format: "" , totalArr)
             
@@ -271,7 +298,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             destinationVC.total = totalArr1.joined(separator: " ")
             destinationVC.total2 = totalArr2.joined(separator: " ")
             
-            destinationVC.z = zipText.text
+            destinationVC.z = clzip
             destinationVC.arr = totalArr
             
             //print(destinationVC.arr)

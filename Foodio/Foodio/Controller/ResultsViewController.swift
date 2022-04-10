@@ -26,8 +26,11 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     
     // arrays of images
-    // will need three, one for each zip code
+    // one array for each zip code
     let im: [UIImage] = [#imageLiteral(resourceName: "canesl.jpeg"),#imageLiteral(resourceName: "jaill.jpeg"),#imageLiteral(resourceName: "frythel.jpeg"),#imageLiteral(resourceName: "shakesh.jpeg")]
+    let im1: [UIImage] = [#imageLiteral(resourceName: "pops.jpeg"),#imageLiteral(resourceName: "wonder.jpeg"),#imageLiteral(resourceName: "sub.jpeg"),#imageLiteral(resourceName: "waldo.jpeg")]
+    let im2: [UIImage] = [#imageLiteral(resourceName: "mickeys.jpeg"),#imageLiteral(resourceName: "chop.jpeg"),#imageLiteral(resourceName: "kfc.jpeg"),#imageLiteral(resourceName: "oph.jpeg")]
+    let im3: [UIImage] = [#imageLiteral(resourceName: "bart.jpeg"),#imageLiteral(resourceName: "gum.jpeg"),#imageLiteral(resourceName: "bk.jpeg"),#imageLiteral(resourceName: "hog.jpeg")]
     
 
     //arrays of restaurants.
@@ -37,7 +40,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
              ("Shake Shack\n4071 W 95th St, Oak Lawn, IL, 60453\nhttps://www.shakeshack.com/home#/\n(708) 330-6530")]
     
     let b = [("Pop's Italian Beef\n10337 S Kedzie Ave, Chicago, IL, 60655\nhttps://www.popsbeef.com/location/chicago/\n(773) 239-1243"),
-             ("Wonder Burger Grill\n3333 West 111th St, Chicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
+             ("WonderBurger Grill\n3333 West 111th St, Chicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
              ("Subway\n10319 S Pulaski, Chicago, IL, 60655\nhttps://www.ordersubway.com/\n(773) 881-3424"),
              ("Waldo Cooney's Pizza\n2410 W 111th St, Chicago, IL, 60655\nhttps://www.waldocooneyspizza.com/\n(773) 825-8019")]
     
@@ -98,19 +101,19 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             
         } else if(z == "60655") {
             
-            ima = im [indexPath.row]
+            ima = im1 [indexPath.row]
             food = b [indexPath.row]
             
         }
         else if(z == "60452") {
             
-            ima = im [indexPath.row]
+            ima = im2 [indexPath.row]
             food = c [indexPath.row]
             
 
         } else if(z == "60445") {
             
-            ima = im [indexPath.row]
+            ima = im3 [indexPath.row]
             food = d [indexPath.row]
             
 
