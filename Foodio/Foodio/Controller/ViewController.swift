@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //check if input food is in restaurant
         while (i < g.count-1) {
             //if restaurant has food
-            if g[i].contains("is") {
+            if g[i].contains("chicken") {
                 //display restaurant with food
                 totalArr.append(contentsOf: g[i])
                 print(totalArr)
@@ -120,7 +120,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             else {
                 print("sorry no food for you")
-                totalArr.removeAll()
+                //totalArr.removeAll()
             }
             i += 1
         }
