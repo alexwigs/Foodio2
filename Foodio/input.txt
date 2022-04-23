@@ -71,6 +71,72 @@ onion rings .
 salad .
 calzones .
 sanwhiches .
-pasta .
+pasta , Mickey's Gyros 60452 :
+the classic baocn burger sanwhich deluxe .
+italian beef sandwhich deluxe .
+grilled cheese sandwhich .
+cheese quesadilla ,
+junior gyros ,
+beef taco , #1 Chop Suey 60452 :
+fried won tons .
+fried chicken wings .
+chinese vegetable soup .
+egg drop soup .
+ham fried rice .
+chicken subgum .
+cashew shrimp , KFC 60452 :
+8 pc meal .
+side lovers meal .
+8 pc tender meal .
+popcorn nuggets combo .
+kfc chicken sandwhich .
+12 kentucky fried wings .
+secret recipe fries .
+mac and cheese , The original Pancake House 60452 :
+apple pancake .
+dutch baby .
+steak skillet .
+western skillet .
+santa fe omelet .
+steak and eggs .
+ham and eggs .
+eggs benedict .
+swedish pancake , Bartolini's 60445 :
+pizza .
+pan seared salmon .
+beer battered cod dinner .
+sauteed big shrimp .
+pepper and egg sandwhich .
+calzones .
+deep dish pizza .
+spaghetti , Gum Wah Restaurant 60445 :
+egg roll .
+bbq pork .
+bbq ribs .
+crab rangoon .
+pot stickers .
+fried won ton .
+ham fried rice .
+gum wah chop suey , Burger King 60445 :
+whopper .
+chicken fries .
+big king .
+bacon king .
+chicken jr .
+rodeo burger .
+cheeseburger .
+tripple whopper with cheese .
+chicken nuggets , The Original Hog Wild 60445 :
+bbq baby back ribs .
+hog combo .
+pork rib tips .
+the hossa .
+boneless pork rib sandwhich .
+beef brisket dinner .
+half pound bacon cheeseburger .
+chicken gyro .
+italian beef sandwhich .
+14 oz new york strip .
+
 
 

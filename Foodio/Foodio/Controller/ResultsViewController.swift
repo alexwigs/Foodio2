@@ -35,28 +35,31 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
 
     //arrays of restaurants.
-    let a = [("Raising Cane's\n1106 Cicero Ave, Oak Lawn, IL, 60453\nhttps://www.raisingcanes.com/\n(708) 422-3736"),
-             ("Jalisco Express Restaurant\n10846 S Cicero Ave, Oak Lawn, IL, 60453\nhttps://www.jaliscoexpressrestaurantofoaklawn.com/\n(708) 423-6476"),
-             ("Fry the Coop\n5128 W 95th St, Oak Lawn, IL, 60453\nhttps://www.frythecoop.com/\n(708) 576-8645"),
-             ("Shake Shack\n4071 W 95th St, Oak Lawn, IL, 60453\nhttps://www.shakeshack.com/home#/\n(708) 330-6530")]
+    let a = [("Raising Cane's\n1106 Cicero Ave, Oak Lawn, IL, 60453\nwww.raisingcanes.com\n(708) 422-3736"),
+             ("Jalisco Express Restaurant\n10846 S Cicero Ave, Oak Lawn, IL, 60453\nwww.jaliscoexpressrestaurantofoaklawn.com\n(708) 423-6476"),
+             ("Fry the Coop\n5128 W 95th St, Oak Lawn, IL, 60453\nwww.frythecoop.com\n(708) 576-8645"),
+             ("Shake Shack\n4071 W 95th St, Oak Lawn, IL, 60453\nwww.shakeshack.com\n(708) 330-6530")]
     
-    let b = [("Pop's Italian Beef\n10337 S Kedzie Ave, Chicago, IL, 60655\nhttps://www.popsbeef.com/location/chicago/\n(773) 239-1243"),
-             ("WonderBurger Grill\n3333 West 111th St, Chicago, IL, 60655\nhttps://www.wonderburgerchicago.com/\n(773) 614-8336"),
-             ("Subway\n10319 S Pulaski, Chicago, IL, 60655\nhttps://www.ordersubway.com/\n(773) 881-3424"),
-             ("Waldo Cooney's Pizza\n2410 W 111th St, Chicago, IL, 60655\nhttps://www.waldocooneyspizza.com/\n(773) 825-8019")]
+    let b = [("Pop's Italian Beef\n10337 S Kedzie Ave, Chicago, IL, 60655\nwww.popsbeef.com\n(773) 239-1243"),
+             ("WonderBurger Grill\n3333 West 111th St, Chicago, IL, 60655\nwww.wonderburger.com\n(773) 614-8336"),
+             ("Subway\n10319 S Pulaski, Chicago, IL, 60655\nwww.ordersubway.com\n(773) 881-3424"),
+             ("Waldo Cooney's Pizza\n2410 W 111th St, Chicago, IL, 60655\nwww.waldocooneyspizza.com\n(773) 825-8019")]
     
-    let c = [("Mickey's Gyros\n15221 Cicero Ave, Oak Forest, IL, 60452\nhttps://www.mickeysgyrosoakforest.com/\n(708) 687-1400"),
-             ("#1 Chop Suey\n15833 Central Ave, Oak Forest, IL, 60452\nhttps://www.oakforestchopsuey.com/\n(708) 687-8598"),
-             ("KFC\n5301 W 159th St, Oak Forest, IL, 60452\nhttps://www.kfc.com/\n(708) 687-0858"),
-             ("The Original Pancake House\n5140 159th St, Oak Forest, IL, 60452\nhttps://www.ophchiagoland.com/\n(708) 687-8282")]
+    let c = [("Mickey's Gyros\n15221 Cicero Ave, Oak Forest, IL, 60452\nwww.mickeysgyros.com\n(708) 687-1400"),
+             ("#1 Chop Suey\n15833 Central Ave, Oak Forest, IL, 60452\nwww.chopsuey.com\n(708) 687-8598"),
+             ("KFC\n5301 W 159th St, Oak Forest, IL, 60452\nwww.kfc.com\n(708) 687-0858"),
+             ("The Original Pancake House\n5140 159th St, Oak Forest, IL, 60452\nwww.ophchiagoland.com\n(708) 687-8282")]
     
     
-    let d = [("Bartolini's\n14420 Pulaski Rd, Midlothian, IL, 60445\nhttps://www.bartolinis.com/\n(708) 396-2333"),
-             ("Gum Wah Restaurant\n3700 147th St, Midlothian, IL, 60445\nhttps://www.gumwayrestaurant.com/\n(708) 389-1100"),
-             ("Burger King\n14300 S Cicero Ave, Midlothian, IL, 60445\nhttps://www.bk.com/\n(708) 597-9520"),
-             ("The Original Hog Wild\n14933 S Pulaski Rd, Midlothian, IL, 60445\nhttps://www.thehogwild.com/\n(708) 371-9005")]
+    let d = [("Bartolini's\n14420 Pulaski Rd, Midlothian, IL, 60445\nwww.bartolinis.com\n(708) 396-2333"),
+             ("Gum Wah Restaurant\n3700 147th St, Midlothian, IL, 60445\nwww.gumwahrestaurant.com\n(708) 389-1100"),
+             ("Burger King\n14300 S Cicero Ave, Midlothian, IL, 60445\nwww.bk.com\n(708) 597-9520"),
+             ("The Original Hog Wild\n14933 S Pulaski Rd, Midlothian, IL, 60445\nwww.thehogwild.com\n(708) 371-9005")]
     
     let e = [("Please enter a valid zip code and food!"),(""),(""),("")]
+    
+    
+    //menu arrays
     
     let chick = [("Raising Canes:\nchicken fingers, texas toast, coleslaw, chicken sandwhich, cane's sauce"),("Fry the Coop:\nNashville Fried Chicken Sandwhich, messy fries, chicken and waffles, spicy butter chicken sandwhich, chicken and waffles")]
     
@@ -71,8 +74,27 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     let sub = [("Subway:\nblt, all american sub, baja steak and jack sub, black forest ham sub, mozza meat wrap, roast beef wrap, personal pizza")]
     
     let pizza = [("Subway:\nblt, all american sub, baja steak and jack sub, black forest ham sub, mozza meat wrap, roast beef wrap, personal pizza"), ("Waldo Cooney's Pizza:\noriginal thin crust pizza, chicago style stuffed cheese pizza, surpreme pizza, vegetarian pizza, bbq chicken pizza, french fries, mozzarella stix, calzones")]
-
     
+    let gyro = [("Mickey's Gyros:\nThe Classic Bacon Burger Sandwhich Deluxe, italian beef sandwhich deluxe, 1/4 pound hamburger, grilled cheese sandwhich, cheese quesadilla, beef taco")]
+    
+    let wonTon = [("#1 Chop Suey:\nfried won tons, fried chicken wings, chinese vegetable soup, egg drop soup, ham fried rice, chicken subgum, shrimp subgum, cashew shrimp")]
+    
+    let chi = [("#1 Chop Suey:\nfried won tons, fried chicken wings, chinese vegetable soup, egg drop soup, ham fried rice, chicken subgum, shrimp subgum, cashew shrimp"),("KFC:\n8 pc meal, side lovers meal, 8 pc tender meal, popcorn nuggets combo, kfc chicken sandhich, 12 kentucky fried wings, secret recipe fries, mac and cheese")]
+    
+    let kfc = [("KFC:\n8 pc meal, side lovers meal, 8 pc tender meal, popcorn nuggets combo, kfc chicken sandhich, 12 kentucky fried wings, secret recipe fries, mac and cheese")]
+    
+    
+    let pancake = [("The Original Pancake House:\napple pancake, dutch baby, steak skillet, western skillet, western omelet, santa fe omelet, steak and eggs, ham and eggs, eggs benedict, swedish pancake")]
+    
+    let barto = [("Bartolini's :\npizza, pan seared salmon, beef battered cod dinner, sauteed big shrimp, grilled cheese panini, pepper and egg sandwhich, calzones, chicken bruschetta, deep dish pizza, spaghetti")]
+    
+    let gum = [("Gum Wah Restaurant:\nGum Wah Chop Suey, egg roll, bbq pork, bbq ribs, crab rangoon, pot stickers, fried won ton, ham fried rice, chicken fried rice")]
+    
+    let bk = [("Burger King:\nwhopper, chicken fries, ch'king sandwhich, big fish, chickenn jr, big king, bacon king, rodeo burger, cheeseburger, triple whopper with cheese, chicken nuggets")]
+    
+    let hog = [("The Original Hog Wild:\nBBQ Baby Back Ribs, hog combo, pork rib tips, the hossa, boneless pork rib sandwhich, beef brisket dinner, half pound bacon cheeseburger, chicken on pita, chicken gyro, italian beef sandwhich")]
+
+    let hi = [("Sorry, this food for this zip code is not in our database at this time!"),("Please check again soon! We apologize for any inconvenience this may cause.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,8 +121,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
                 lab.text = taco[0]
                 seclab.text = ""
             default:
-                lab.text = "sorry this food is not in our database."
-                seclab.text = ""
+                lab.text = hi[0]
+                seclab.text = hi[1]
             }
             
         } else if(z == "60655") {
@@ -119,17 +141,49 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
                 lab.text = blt[0]
                 seclab.text = blt[1]
             default:
-                lab.text = "sorry this food is not in our database."
-                seclab.text = ""
+                lab.text = hi[0]
+                seclab.text = hi[1]
             }
         }
         else if(z == "60452") {
             
-            
+            switch f {
+            case "gyro":
+                lab.text = gyro[0]
+                seclab.text = ""
+            case "pancake":
+                lab.text = pancake[0]
+                seclab.text = ""
+            case "nuggets":
+                lab.text = kfc[0]
+                seclab.text = ""
+            case "chicken":
+                lab.text = chi[0]
+                seclab.text = chi[1]
+            default:
+                lab.text = hi[0]
+                seclab.text = hi[1]
+            }
 
         } else if(z == "60445") {
             
-            
+            switch f {
+            case "pizza":
+                lab.text = barto[0]
+                seclab.text = ""
+            case "roll":
+                lab.text = gum[0]
+                seclab.text = ""
+            case "ribs":
+                lab.text = hog[0]
+                seclab.text = ""
+            case "whopper":
+                lab.text = bk[0]
+                seclab.text = ""
+            default:
+                lab.text = hi[0]
+                seclab.text = hi[1]
+            }
 
         }
         
