@@ -149,7 +149,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-k1-dRN">
                                 <rect key="frame" x="10" y="78.333333333333329" width="408" height="24.333333333333329"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-mG-CtF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-mG-CtF">
                                         <rect key="frame" x="0.0" y="0.0" width="203" height="24.333333333333332"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -163,8 +163,10 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="KEM-mG-CtF" firstAttribute="top" secondItem="WYt-k1-dRN" secondAttribute="top" id="CCL-rX-C3d"/>
                                     <constraint firstItem="qBS-Oz-vqv" firstAttribute="height" secondItem="KEM-mG-CtF" secondAttribute="height" id="XvG-hd-Psn"/>
                                     <constraint firstItem="qBS-Oz-vqv" firstAttribute="width" secondItem="KEM-mG-CtF" secondAttribute="width" constant="2" id="eti-4I-c2N"/>
+                                    <constraint firstItem="qBS-Oz-vqv" firstAttribute="top" secondItem="WYt-k1-dRN" secondAttribute="top" id="iw2-By-mkF"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food entered for zip code" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-We-OUU">

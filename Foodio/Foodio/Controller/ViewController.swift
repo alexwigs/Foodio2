@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var h = [String]();
     var foodarr = [String]();
     
+    //emily and andrew
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -153,6 +155,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //andrew and eman
     
     //add done bar to keyboard so user can dismiss keyboard
     
@@ -197,6 +200,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // check fields and validate data is correct. if everything is correct
     // method returns nil, if not return error message.
+    
+    //alex and emily
     
     func validateFields() -> String? {
         
@@ -282,6 +287,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //alex and andrew
     
     //this method sends the final arrays to the results page
     //also gives results page access to zip code and food entry

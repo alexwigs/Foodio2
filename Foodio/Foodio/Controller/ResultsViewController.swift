@@ -17,6 +17,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tabView: UITableView!
     
+    //alex and emily
+    
     var total: String?
     var total2: String?
     var summary: String?
@@ -61,7 +63,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     //menu arrays
     
-    let chick = [("Raising Canes:\nchicken fingers, texas toast, coleslaw, chicken sandwhich, cane's sauce"),("Fry the Coop:\nNashville Fried Chicken Sandwhich, messy fries, chicken and waffles, spicy butter chicken sandwhich, chicken and waffles")]
+    let chick = [("Raising Canes:\nchicken fingers, texas toast, coleslaw, chicken sandwhich, cane's sauce, crinkle cut fries"),("Fry the Coop:\nNashville Fried Chicken Sandwhich, messy fries, chicken and waffles, spicy butter chicken sandwhich, chicken and waffles")]
     
     let burger = [("Shake Shack:\nShack burger, cheeseburger, hamburger, hot dog, chocolate milk and cookies, grilled cheese")]
     
@@ -92,7 +94,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     let bk = [("Burger King:\nwhopper, chicken fries, ch'king sandwhich, big fish, chickenn jr, big king, bacon king, rodeo burger, cheeseburger, triple whopper with cheese, chicken nuggets")]
     
-    let hog = [("The Original Hog Wild:\nBBQ Baby Back Ribs, hog combo, pork rib tips, the hossa, boneless pork rib sandwhich, beef brisket dinner, half pound bacon cheeseburger, chicken on pita, chicken gyro, italian beef sandwhich")]
+    let hog = [("The Original Hog Wild:\nBBQ Baby Back Ribs, hog combo, pork rib tips, the hossa, boneless pork rib sandwhich, beef brisket dinner, half pound bacon cheeseburger, chicken on pita, chicken gyro, homemade polish sausage, italian beef sandwhich")]
 
     let hi = [("Sorry, this food for this zip code is not in our database at this time!"),("Please check again soon! We apologize for any inconvenience this may cause.")]
     
@@ -107,6 +109,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
         //lab.text = total
         //seclab.text = total2
         
+        
+        //andrew and eman
+        
         //check which zip user entered and display correct arrays
         if(z == "60453") {
         
@@ -120,6 +125,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             case "taco":
                 lab.text = taco[0]
                 seclab.text = ""
+            case "fries":
+                lab.text = chick[0]
+                seclab.text = chick[1]
             default:
                 lab.text = hi[0]
                 seclab.text = hi[1]
@@ -129,6 +137,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             
             switch f {
             case "beef":
+                lab.text = beef[0]
+                seclab.text = sub[0]
+            case "soup":
                 lab.text = beef[0]
                 seclab.text = ""
             case "sub":
@@ -140,6 +151,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             case "blt":
                 lab.text = blt[0]
                 seclab.text = blt[1]
+            case "calzone":
+                lab.text = pizza[1]
+                seclab.text = ""
             default:
                 lab.text = hi[0]
                 seclab.text = hi[1]
@@ -154,7 +168,19 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             case "pancake":
                 lab.text = pancake[0]
                 seclab.text = ""
+            case "eggs":
+                lab.text = pancake[0]
+                seclab.text = ""
+            case "rice":
+                lab.text = wonTon[0]
+                seclab.text = ""
+            case "won":
+                lab.text = wonTon[0]
+                seclab.text = ""
             case "nuggets":
+                lab.text = kfc[0]
+                seclab.text = ""
+            case "mac":
                 lab.text = kfc[0]
                 seclab.text = ""
             case "chicken":
@@ -180,6 +206,15 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
             case "whopper":
                 lab.text = bk[0]
                 seclab.text = ""
+            case "burger":
+                lab.text = bk[0]
+                seclab.text = hog[0]
+            case "polish":
+                lab.text = hog[0]
+                seclab.text = ""
+            case "fish":
+                lab.text = bk[0]
+                seclab.text = barto[0]
             default:
                 lab.text = hi[0]
                 seclab.text = hi[1]
@@ -191,6 +226,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
         
         // Do any additional setup after loading the view.
     }
+    
+    //eman and alex 
     
     //set up the table view
     func numberOfSections(in tableView: UITableView) -> Int {
