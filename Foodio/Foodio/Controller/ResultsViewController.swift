@@ -21,6 +21,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     var total2: String?
     var summary: String?
     var z: String?
+    var f: String?
     var arr = [String]();
     var arr2 = [String]();
     
@@ -57,6 +58,21 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     let e = [("Please enter a valid zip code and food!"),(""),(""),("")]
     
+    let chick = [("Raising Canes:\nchicken fingers, texas toast, coleslaw, chicken sandwhich, cane's sauce"),("Fry the Coop:\nNashville Fried Chicken Sandwhich, messy fries, chicken and waffles, spicy butter chicken sandwhich, chicken and waffles")]
+    
+    let burger = [("Shake Shack:\nShack burger, cheeseburger, hamburger, hot dog, chocolate milk and cookies, grilled cheese")]
+    
+    let taco = [("Jalisco Express Restaurant:\ntacos (beef, steak, pork), taco dinner, tortas, horchata, quesadillas, nachos, fajitas, burrites, fried ice cream")]
+    
+    let beef = [("Pop's Italian Beef:\nsoup, Italian Beef Sandwhich, hamburger, cheeseburger, ribeye steak, double pizzaburger, hot dog")]
+    
+    let blt = [("WonderBurger Grill:\nwonderburger, cheeseburger, blt, patty melt, wonder dog, curly q fries, salad, milk shake"),("Subway:\nblt, all american sub, baja steak and jack sub, black forest ham sub, mozza meat wrap, roast beef wrap, personal pizza")]
+    
+    let sub = [("Subway:\nblt, all american sub, baja steak and jack sub, black forest ham sub, mozza meat wrap, roast beef wrap, personal pizza")]
+    
+    let pizza = [("Subway:\nblt, all american sub, baja steak and jack sub, black forest ham sub, mozza meat wrap, roast beef wrap, personal pizza"), ("Waldo Cooney's Pizza:\noriginal thin crust pizza, chicago style stuffed cheese pizza, surpreme pizza, vegetarian pizza, bbq chicken pizza, french fries, mozzarella stix, calzones")]
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,8 +82,56 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
         reCal.layer.borderColor = UIColor.white.cgColor
         reCal.tintColor = UIColor.white
         
-        lab.text = total
-        seclab.text = total2
+        //lab.text = total
+        //seclab.text = total2
+        
+        //check which zip user entered and display correct arrays
+        if(z == "60453") {
+        
+            switch f {
+            case "chicken":
+                lab.text = chick[0]
+                seclab.text = chick[1]
+            case "burger":
+                lab.text = burger[0]
+                seclab.text = ""
+            case "taco":
+                lab.text = taco[0]
+                seclab.text = ""
+            default:
+                lab.text = "sorry this food is not in our database."
+                seclab.text = ""
+            }
+            
+        } else if(z == "60655") {
+            
+            switch f {
+            case "beef":
+                lab.text = beef[0]
+                seclab.text = ""
+            case "sub":
+                lab.text = sub[0]
+                seclab.text = ""
+            case "pizza":
+                lab.text = pizza[0]
+                seclab.text = pizza[1]
+            case "blt":
+                lab.text = blt[0]
+                seclab.text = blt[1]
+            default:
+                lab.text = "sorry this food is not in our database."
+                seclab.text = ""
+            }
+        }
+        else if(z == "60452") {
+            
+            
+
+        } else if(z == "60445") {
+            
+            
+
+        }
         
         foodTextL.text = summary
         

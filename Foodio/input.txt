@@ -1,70 +1,76 @@
- This is a text file it 60453 freakin works , hi
- yo here is some more , hu
- McDonalds 60655 Evergreen Park
- McDouble McChicken Chicken tenders
-
-Raising Cane's :
-chicken fingers
-texas toast
-coleslaw
-chicken sandwich
-cane's sauce , Jalisco Express Restaurant :
-tacos
-taco dinner
-tortas
-horchata
-quesadillas
-nachos
-fajitas
-burritos
-fried ice cream
-rice
-beans
-manudo , Fry the Coop :
-nashville fried chicken sandwhich
-chicken & cheese sandwhich
-messy fries
-chicken & waffles
-donut fried chicken sandwhich , Shake Shack :
-crinkle cut fries
-shack burger
-cheeseburger
-hamburger
-chicken bites
-hot dog
-chocolate milk and cookies
-grilled cheese
-fountain soda , Pop's Italian Beef :
-soup
-italian beef sandwhich
-italian sausage sandwhich
-hamburger
-cheeseburger
-ribeye steak
-double pizzaburger
-breaded chicken sandwhich
-hot dog
-swiss dog
-shrimp , WonderBurger Grill :
-wonderburger
-cheeseburger
-blt
-patty melt
-wonder dog
-curly q fries
-salad
-soup
-milk shake
+ Raising Cane's 60453 :
+ chicken fingers
+ texas toast
+ coleslaw .
+ chicken sandwich
+ cane's sauce , Jalisco Express Restaurant 60453 :
+ tacos .
+ taco dinner .
+ tortas .
+ horchata .
+ quesadillas .
+ nachos .
+ fajitas .
+ burritos .
+ fried ice cream .
+ rice .
+ beans .
+ manudo , Fry the Coop 60435 :
+ nashville fried chicken sandwhich .
+ chicken & cheese sandwhich .
+ messy fries .
+ chicken & waffles .
+ donut fried chicken sandwhich , Shake Shack 60453 :
+ crinkle cut fries .
+ shack burger .
+ cheeseburger ,
+ hamburger .
+ chicken bites .
+ hot dog .
+ chocolate milk and cookies .
+ grilled cheese .
+ fountain soda , Pop's Italian Beef 60655 :
+soup .
+italian beef sandwhich .
+italian sausage sandwhich .
+hamburger .
+cheeseburger .
+ribeye steak .
+double pizzaburger .
+breaded chicken sandwhich .
+hot dog .
+swiss dog .
+shrimp , WonderBurger Grill 60655 :
+wonderburger .
+cheeseburger .
+blt .
+patty melt .
+wonder dog .
+curly q fries .
+salad .
+soup .
+milk shake .
 sundae , Subway :
-blt
-all american sub sandwhich
-baja steak & jack sandwhich
-black forest ham sandwhich
-buffalo chicken sandwhich
-mozza meat wrap
-cold cut combo wrap
-roast beef wrap
-personal pizza , Waldo Cooney's Pizza :
-
+blt .
+all american sub sandwhich .
+baja steak & jack sandwhich .
+black forest ham sandwhich .
+buffalo chicken sandwhich .
+mozza meat wrap .
+cold cut combo wrap .
+roast beef wrap .
+personal pizza , Waldo Cooney's Pizza 60655 :
+original thin crust pizza .
+chicago style stuffed cheese pizza .
+surpreme pizza .
+vegetarian pizza .
+bbq chicken pizza .
+french fries .
+mozzarella sticks .
+onion rings .
+salad .
+calzones .
+sanwhiches .
+pasta .
 
 

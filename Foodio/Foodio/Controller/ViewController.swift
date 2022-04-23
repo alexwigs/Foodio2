@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //check if input food is in restaurant
         while (i < g.count-1) {
             //if restaurant has food
-            if g[i].contains("chicken") {
+            if g[i].contains(cod) {
                 //display restaurant with food
                 totalArr.append(contentsOf: g[i])
                 print(totalArr)
@@ -290,15 +290,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if segue.identifier == "goToResult" {
             
             let clzip = zipText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let clfoo = foodText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             let destinationVC = segue.destination as! ResultsViewController
             //destinationVC.total = String(format: "" , totalArr)
             
             //send to split arrays to result page
-            destinationVC.total = totalArr1.joined(separator: " ")
-            destinationVC.total2 = totalArr2.joined(separator: " ")
+            //destinationVC.total = totalArr1.joined(separator: " ")
+            //destinationVC.total2 = totalArr2.joined(separator: " ")
             
             destinationVC.z = clzip
+            destinationVC.f = clfoo
             destinationVC.arr = totalArr
             
             //print(destinationVC.arr)
