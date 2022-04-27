@@ -92,7 +92,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
     
     let gum = [("Gum Wah Restaurant:\nGum Wah Chop Suey, egg roll, bbq pork, bbq ribs, crab rangoon, pot stickers, fried won ton, ham fried rice, chicken fried rice")]
     
-    let bk = [("Burger King:\nwhopper, chicken fries, ch'king sandwhich, big fish, chickenn jr, big king, bacon king, rodeo burger, cheeseburger, triple whopper with cheese, chicken nuggets")]
+    let bk = [("Burger King:\nwhopper, chicken fries, ch'king sandwhich, big fish, chicken jr, big king, bacon king, rodeo burger, cheeseburger, triple whopper with cheese, chicken nuggets")]
     
     let hog = [("The Original Hog Wild:\nBBQ Baby Back Ribs, hog combo, pork rib tips, the hossa, boneless pork rib sandwhich, beef brisket dinner, half pound bacon cheeseburger, chicken on pita, chicken gyro, homemade polish sausage, italian beef sandwhich")]
 
