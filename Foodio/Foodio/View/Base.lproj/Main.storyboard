@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,64 +14,66 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Foodio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4982.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-ni-AJ7">
-                                <rect key="frame" x="0.0" y="180" width="375" height="487"/>
+                                <rect key="frame" x="0.0" y="190" width="428" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyP-Tn-sWO">
-                                <rect key="frame" x="130.5" y="220" width="114.5" height="38.5"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <rect key="frame" x="152.66666666666666" y="230" width="122.99999999999997" height="41.333333333333314"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgu-vd-8FU">
-                                <rect key="frame" x="158" y="361.5" width="59" height="38.5"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <rect key="frame" x="181.33333333333334" y="386.33333333333331" width="65.333333333333343" height="42.666666666666686"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are you craving???" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTo-j7-gki">
-                                <rect key="frame" x="62.5" y="415" width="250" height="36.5"/>
+                                <rect key="frame" x="64" y="444" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="av3-VB-PAa"/>
+                                    <constraint firstAttribute="width" constant="300" id="av3-VB-PAa"/>
+                                    <constraint firstAttribute="height" constant="50" id="bZC-bd-wAg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xc9-FH-AHt">
-                                <rect key="frame" x="97.5" y="273.5" width="180" height="38"/>
+                                <rect key="frame" x="99" y="286.33333333333331" width="230" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="6Lh-9U-Gtq"/>
+                                    <constraint firstAttribute="width" constant="230" id="6Lh-9U-Gtq"/>
+                                    <constraint firstAttribute="height" constant="50" id="mvh-B9-K6C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ9-xc-rI8">
-                                <rect key="frame" x="67.5" y="546.5" width="240" height="53"/>
+                                <rect key="frame" x="84" y="589" width="260" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="iHM-oF-QWZ"/>
-                                    <constraint firstAttribute="height" constant="53" id="kzf-aw-8VD"/>
+                                    <constraint firstAttribute="width" constant="260" id="iHM-oF-QWZ"/>
+                                    <constraint firstAttribute="height" constant="59" id="kzf-aw-8VD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="31"/>
                                 <state key="normal" title="Find My Food!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="findFoodPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ste-ld-PnG"/>
-                                    <segue destination="E5c-C7-Qxo" kind="presentation" identifier="goToResult" id="ZK6-pC-jk7"/>
+                                    <segue destination="E5c-C7-Qxo" kind="presentation" identifier="goToResult" modalPresentationStyle="automatic" id="ZK6-pC-jk7"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2424.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="tRa-CY-pa8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="190"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="Rqw-wy-ooc"/>
+                                    <constraint firstAttribute="height" constant="190" id="Rqw-wy-ooc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP6-fj-Ff2">
-                                <rect key="frame" x="166" y="486.5" width="43" height="25.5"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <rect key="frame" x="189" y="529" width="50" height="30"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -116,15 +119,15 @@
             <objects>
                 <viewController storyboardIdentifier="ResultsVC" id="E5c-C7-Qxo" customClass="ResultsViewController" customModule="Foodio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EST-9u-lWk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4982.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IBq-Dd-W7P">
-                                <rect key="frame" x="0.0" y="180" width="375" height="467"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                                 <rect key="contentStretch" x="0.0" y="0.84999999999999998" width="1" height="1"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAd-ae-2ge">
-                                <rect key="frame" x="62.5" y="551" width="250" height="51"/>
+                                <rect key="frame" x="89" y="776" width="250" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="BBL-EX-A1p"/>
                                     <constraint firstAttribute="height" constant="51" id="DxE-3M-OI1"/>
@@ -138,69 +141,78 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU2-Ex-HA4">
-                                <rect key="frame" x="120.5" y="200" width="134.5" height="38.5"/>
+                                <rect key="frame" x="147" y="20.000000000000004" width="134.33333333333337" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-k1-dRN">
+                                <rect key="frame" x="10" y="78.333333333333329" width="408" height="24.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-mG-CtF">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="24.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qBS-Oz-vqv">
+                                        <rect key="frame" x="203" y="0.0" width="205" height="24.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KEM-mG-CtF" firstAttribute="top" secondItem="WYt-k1-dRN" secondAttribute="top" id="CCL-rX-C3d"/>
+                                    <constraint firstItem="qBS-Oz-vqv" firstAttribute="height" secondItem="KEM-mG-CtF" secondAttribute="height" id="XvG-hd-Psn"/>
+                                    <constraint firstItem="qBS-Oz-vqv" firstAttribute="width" secondItem="KEM-mG-CtF" secondAttribute="width" constant="2" id="eti-4I-c2N"/>
+                                    <constraint firstItem="qBS-Oz-vqv" firstAttribute="top" secondItem="WYt-k1-dRN" secondAttribute="top" id="iw2-By-mkF"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food entered for zip code" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-We-OUU">
-                                <rect key="frame" x="26" y="313" width="323" height="24.5"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-mG-CtF">
-                                <rect key="frame" x="26" y="263.5" width="323" height="24.5"/>
+                                <rect key="frame" x="30" y="122.66666666666667" width="368" height="24.333333333333329"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C8z-9T-3Mw">
-                                <rect key="frame" x="0.0" y="367.5" width="375" height="163.5"/>
+                                <rect key="frame" x="0.0" y="167" width="428" height="589"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="E5c-C7-Qxo" id="Ctw-cs-9z8"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2424.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dqS-XK-cKM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="5ln-7q-yhn"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uJt-aT-vm3"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="uJt-aT-vm3" firstAttribute="trailing" secondItem="dqS-XK-cKM" secondAttribute="trailing" id="083-0P-xRg"/>
                             <constraint firstItem="ZxN-We-OUU" firstAttribute="leading" secondItem="EST-9u-lWk" secondAttribute="leadingMargin" constant="10" id="1iO-QQ-jjX"/>
                             <constraint firstAttribute="bottomMargin" secondItem="IBq-Dd-W7P" secondAttribute="bottom" id="64N-J5-4hg"/>
+                            <constraint firstItem="WYt-k1-dRN" firstAttribute="leading" secondItem="uJt-aT-vm3" secondAttribute="leading" constant="10" id="7pL-D7-Lgj"/>
                             <constraint firstItem="ZU2-Ex-HA4" firstAttribute="centerX" secondItem="EST-9u-lWk" secondAttribute="centerX" id="DeZ-f8-QmX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZxN-We-OUU" secondAttribute="trailing" constant="10" id="EYQ-fi-gSj"/>
                             <constraint firstItem="yAd-ae-2ge" firstAttribute="centerX" secondItem="EST-9u-lWk" secondAttribute="centerX" id="HMf-6d-yO6"/>
-                            <constraint firstItem="IBq-Dd-W7P" firstAttribute="top" secondItem="dqS-XK-cKM" secondAttribute="bottom" id="KoF-Js-wIH"/>
+                            <constraint firstItem="ZxN-We-OUU" firstAttribute="top" secondItem="WYt-k1-dRN" secondAttribute="bottom" constant="20" id="IRJ-x0-QOr"/>
+                            <constraint firstItem="IBq-Dd-W7P" firstAttribute="top" secondItem="EST-9u-lWk" secondAttribute="top" id="LUy-cN-Jeg"/>
                             <constraint firstItem="uJt-aT-vm3" firstAttribute="bottom" secondItem="yAd-ae-2ge" secondAttribute="bottom" constant="45" id="MSK-ZN-TEx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KEM-mG-CtF" secondAttribute="trailing" constant="10" id="N2D-B6-16t"/>
                             <constraint firstItem="C8z-9T-3Mw" firstAttribute="leading" secondItem="uJt-aT-vm3" secondAttribute="leading" id="OD3-V1-cGM"/>
-                            <constraint firstItem="KEM-mG-CtF" firstAttribute="top" secondItem="ZU2-Ex-HA4" secondAttribute="bottom" constant="25" id="OXM-97-sdK"/>
                             <constraint firstItem="uJt-aT-vm3" firstAttribute="trailing" secondItem="IBq-Dd-W7P" secondAttribute="trailing" id="RO9-Ms-uyu"/>
                             <constraint firstItem="C8z-9T-3Mw" firstAttribute="centerX" secondItem="EST-9u-lWk" secondAttribute="centerX" id="T1Q-ei-bFe"/>
-                            <constraint firstItem="C8z-9T-3Mw" firstAttribute="top" secondItem="ZxN-We-OUU" secondAttribute="bottom" constant="30" id="UtC-3M-LiX"/>
-                            <constraint firstItem="ZxN-We-OUU" firstAttribute="top" secondItem="KEM-mG-CtF" secondAttribute="bottom" constant="25" id="VrK-wl-hY4"/>
+                            <constraint firstItem="C8z-9T-3Mw" firstAttribute="top" secondItem="ZxN-We-OUU" secondAttribute="bottom" constant="20" id="UtC-3M-LiX"/>
                             <constraint firstItem="IBq-Dd-W7P" firstAttribute="leading" secondItem="uJt-aT-vm3" secondAttribute="leading" id="W4N-eN-T0p"/>
-                            <constraint firstItem="dqS-XK-cKM" firstAttribute="top" secondItem="EST-9u-lWk" secondAttribute="top" id="dhj-dt-l67"/>
                             <constraint firstItem="yAd-ae-2ge" firstAttribute="top" secondItem="C8z-9T-3Mw" secondAttribute="bottom" constant="20" id="e8h-If-rZ3"/>
-                            <constraint firstItem="ZU2-Ex-HA4" firstAttribute="top" secondItem="dqS-XK-cKM" secondAttribute="bottom" constant="20" id="eye-in-Kjd"/>
-                            <constraint firstItem="dqS-XK-cKM" firstAttribute="leading" secondItem="uJt-aT-vm3" secondAttribute="leading" id="g0g-nM-7SR"/>
+                            <constraint firstItem="ZU2-Ex-HA4" firstAttribute="top" secondItem="EST-9u-lWk" secondAttribute="top" constant="20" id="eye-in-Kjd"/>
+                            <constraint firstItem="WYt-k1-dRN" firstAttribute="top" secondItem="ZU2-Ex-HA4" secondAttribute="bottom" constant="20" id="jmN-dw-EDX"/>
                             <constraint firstItem="uJt-aT-vm3" firstAttribute="trailing" secondItem="C8z-9T-3Mw" secondAttribute="trailing" id="mnD-y3-dli"/>
+                            <constraint firstItem="uJt-aT-vm3" firstAttribute="trailing" secondItem="WYt-k1-dRN" secondAttribute="trailing" constant="10" id="tc8-5W-mKg"/>
                             <constraint firstItem="ZxN-We-OUU" firstAttribute="centerX" secondItem="EST-9u-lWk" secondAttribute="centerX" id="tic-pc-FEs"/>
-                            <constraint firstItem="KEM-mG-CtF" firstAttribute="leading" secondItem="EST-9u-lWk" secondAttribute="leadingMargin" constant="10" id="yI3-rx-etd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="foodTextL" destination="ZxN-We-OUU" id="mVn-h8-c5U"/>
                         <outlet property="lab" destination="KEM-mG-CtF" id="X0N-FO-PMS"/>
                         <outlet property="reCal" destination="yAd-ae-2ge" id="q1I-Ah-FMe"/>
+                        <outlet property="seclab" destination="qBS-Oz-vqv" id="eIF-9k-hkQ"/>
                         <outlet property="tabView" destination="C8z-9T-3Mw" id="dhO-W1-5uS"/>
                     </connections>
                 </viewController>

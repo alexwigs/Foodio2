@@ -1,4 +1,143 @@
- This is a text file it 60546 freakin works , hi
- yo here is some more , hu
- McDonalds 60805 Evergreen Park
- McDouble McChicken Chicken tenders
+ Raising Cane's 60453 :
+ chicken fingers
+ texas toast
+ coleslaw .
+ chicken sandwich
+ cane's sauce , Jalisco Express Restaurant 60453 :
+ tacos .
+ taco dinner .
+ tortas .
+ horchata .
+ quesadillas .
+ nachos .
+ fajitas .
+ burritos .
+ fried ice cream .
+ rice .
+ beans .
+ manudo , Fry the Coop 60435 :
+ nashville fried chicken sandwhich .
+ chicken & cheese sandwhich .
+ messy fries .
+ chicken & waffles .
+ donut fried chicken sandwhich , Shake Shack 60453 :
+ crinkle cut fries .
+ shack burger .
+ cheeseburger ,
+ hamburger .
+ chicken bites .
+ hot dog .
+ chocolate milk and cookies .
+ grilled cheese .
+ fountain soda , Pop's Italian Beef 60655 :
+soup .
+italian beef sandwhich .
+italian sausage sandwhich .
+hamburger .
+cheeseburger .
+ribeye steak .
+double pizzaburger .
+breaded chicken sandwhich .
+hot dog .
+swiss dog .
+shrimp , WonderBurger Grill 60655 :
+wonderburger .
+cheeseburger .
+blt .
+patty melt .
+wonder dog .
+curly q fries .
+salad .
+soup .
+milk shake .
+sundae , Subway :
+blt .
+all american sub sandwhich .
+baja steak & jack sandwhich .
+black forest ham sandwhich .
+buffalo chicken sandwhich .
+mozza meat wrap .
+cold cut combo wrap .
+roast beef wrap .
+personal pizza , Waldo Cooney's Pizza 60655 :
+original thin crust pizza .
+chicago style stuffed cheese pizza .
+surpreme pizza .
+vegetarian pizza .
+bbq chicken pizza .
+french fries .
+mozzarella sticks .
+onion rings .
+salad .
+calzones .
+sanwhiches .
+pasta , Mickey's Gyros 60452 :
+the classic baocn burger sanwhich deluxe .
+italian beef sandwhich deluxe .
+grilled cheese sandwhich .
+cheese quesadilla ,
+junior gyros ,
+beef taco , #1 Chop Suey 60452 :
+fried won tons .
+fried chicken wings .
+chinese vegetable soup .
+egg drop soup .
+ham fried rice .
+chicken subgum .
+cashew shrimp , KFC 60452 :
+8 pc meal .
+side lovers meal .
+8 pc tender meal .
+popcorn nuggets combo .
+kfc chicken sandwhich .
+12 kentucky fried wings .
+secret recipe fries .
+mac and cheese , The original Pancake House 60452 :
+apple pancake .
+dutch baby .
+steak skillet .
+western skillet .
+santa fe omelet .
+steak and eggs .
+ham and eggs .
+eggs benedict .
+swedish pancake , Bartolini's 60445 :
+pizza .
+pan seared salmon .
+beer battered cod dinner .
+sauteed big shrimp .
+pepper and egg sandwhich .
+calzones .
+deep dish pizza .
+spaghetti , Gum Wah Restaurant 60445 :
+egg roll .
+bbq pork .
+bbq ribs .
+crab rangoon .
+pot stickers .
+fried won ton .
+ham fried rice .
+gum wah chop suey , Burger King 60445 :
+whopper .
+chicken fries .
+big king .
+bacon king .
+chicken jr .
+rodeo burger .
+cheeseburger .
+tripple whopper with cheese .
+chicken nuggets , The Original Hog Wild 60445 :
+bbq baby back ribs .
+hog combo .
+pork rib tips .
+the hossa .
+boneless pork rib sandwhich .
+beef brisket dinner .
+half pound bacon cheeseburger .
+chicken gyro .
+italian beef sandwhich .
+homemade polish sausage .
+14 oz new york strip .
+
+
+

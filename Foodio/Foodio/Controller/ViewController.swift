@@ -14,26 +14,37 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var findFoodBut: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    //all of our data structures
     var zipArr = [String]();
     var totalArr = [String]();
+    var totalArr1 = [String]();
+    var totalArr2 = [String]();
     var h = [String]();
+    var foodarr = [String]();
+    
+    //emily and andrew
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //keyboard will block text field for zip code because the view is not a scroll view
+        //can update this later after learning more about scroll views.
+        setUp()
+        
+        
         // Do any additional setup after loading the view.
         
+        //set error label to empty so user cant see it
         errorLabel.text = ""
         
+        //format round buttons
         findFoodBut.layer.cornerRadius = 25.0
         findFoodBut.layer.borderWidth = 2
         findFoodBut.layer.borderColor = UIColor.white.cgColor
         findFoodBut.tintColor = UIColor.white
         
-        //findFoodBut.isEnabled = false
         
-        //zipText.delegate = self
-        //foodText.delegate = self
-        
+        //input file and put into a string
         
         let fileP = Bundle.main.path(forResource: "input", ofType: "txt")
         var myData = ""
@@ -45,10 +56,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //put txt input from string into array
         h = myData.components(separatedBy: " ")
+        
        // print(h)
         
         //split array into array for each restaraunt
         let g = h.split(separator: ",")
+        
+        
         //print(g)
         //create each individual restaraunt
         //let first = g[0]
@@ -93,12 +107,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var i = 0
         
         let foo = String(foodText.text ?? "")
+        
+        let cod = foodText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         print(g)
         
         //check if input food is in restaurant
         while (i < g.count-1) {
             //if restaurant has food
-            if g[i].contains("is") {
+            if g[i].contains(cod) {
                 //display restaurant with food
                 totalArr.append(contentsOf: g[i])
                 print(totalArr)
@@ -106,25 +122,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             else {
                 print("sorry no food for you")
-                totalArr.removeAll()
+                //totalArr.removeAll()
             }
             i += 1
         }
         
+        //at the very end right before we validate fields
+        //after total array is filled, split into 2 arrays to send to result.
+        var ci = 0
+        while (ci < totalArr.count-1) {
+            
+            if(ci < totalArr.count/2) {
+                totalArr1.append(totalArr[ci])
+                print(totalArr1)
+            }
+            
+            else {
+                totalArr2.append(totalArr[ci])
+                print(totalArr2)
+            }
+            ci += 1
+        }
         
-        //check to see if value input is in restauraunt
-        //if second.contains(foo) {
-            //if it is return restauraunt array
-            //print("amazing")
-        //}
-        //else {
-            //dont return anything or check next restaurant array
-          //  print("nah man")
-        //}
-        
-        //let fir: [[String]] = h.split(separator: "").map{Array($0)}
-       // print(first)
-        //print(second)
         
         var j = 0
         
@@ -136,6 +155,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //andrew and eman
+    
+    //add done bar to keyboard so user can dismiss keyboard
+    
+    func setUp() {
+        let bar = UIToolbar()
+        
+        let done = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissMy))
+        
+        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        bar.items = [space, space, done]
+        bar.sizeToFit()
+        
+        zipText.inputAccessoryView = bar
+        foodText.inputAccessoryView = bar
+    }
+    
+    @objc func dismissMy(){
+        view.endEditing(true)
+    }
     
     
     //validate input
@@ -157,8 +197,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
    
    
     
+    
     // check fields and validate data is correct. if everything is correct
     // method returns nil, if not return error message.
+    
+    //alex and emily
     
     func validateFields() -> String? {
         
@@ -206,6 +249,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return nil
     }
     
+    
+    //not sure if this does something, but leave here just in case
     func transitionToResults() {
         
         let reultsViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.resultsViewController) as? ResultsViewController
@@ -216,18 +261,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    //most likely wont use this method but leave here just in case
+    //this method excecutes when find food is pressed
     @IBAction func findFoodPressed(_ sender: UIButton) {
         
         
     }
     
+    //transitions to result page if user enters valid input
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let error = validateFields()
         
         if error != nil {
             
             // there is something wrong show error message
-            //findFoodBut.isEnabled = false
+            
             errorLabel.text = error
             
             return false
@@ -239,17 +287,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    //alex and andrew
+    
+    //this method sends the final arrays to the results page
+    //also gives results page access to zip code and food entry
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToResult" {
             
+            let clzip = zipText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let clfoo = foodText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
             let destinationVC = segue.destination as! ResultsViewController
             //destinationVC.total = String(format: "" , totalArr)
-            destinationVC.total = totalArr.joined(separator: " ")
-            destinationVC.z = zipText.text
+            
+            //send to split arrays to result page
+            //destinationVC.total = totalArr1.joined(separator: " ")
+            //destinationVC.total2 = totalArr2.joined(separator: " ")
+            
+            destinationVC.z = clzip
+            destinationVC.f = clfoo
             destinationVC.arr = totalArr
+            
             //print(destinationVC.arr)
-            destinationVC.summary = "Food entered: \(foodText.text ?? "") for zip code: \(zipText.text ?? "")"
+            
+            destinationVC.summary = "Food entered: \(foodText.text ?? ""), for zip code: \(zipText.text ?? "")"
             
             
         }
@@ -258,41 +320,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    //var myData = readFile(inputfile: "input.txt")
 
 }
 
-
-
-//extension String {
-    //get file name from string
-  //  func fileName() -> String {
-    //    return URL(fileURLWithPath: self).deletingPathExtension().lastPathComponent
-    //}
-    
-    //get file extension
-   // func fileExtension() -> String {
-     //   return URL(fileURLWithPath: self).pathExtension
-    //}
-//}
-
-//func readFile(inputfile : String) -> String {
-    //split file extension and file name
- //   let fileExtension = inputfile.fileExtension()
-   // let fileName = inputfile.fileName()
-    
-    //get file url
-    //let fileURL = try! FileManager.default.url(for: .desktopDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-    
-    //let inputFile = fileURL.appendingPathComponent(fileName).appendingPathExtension(fileExtension)
-    
-    //get the data
-   // do{
-     //   let savedData = try String(contentsOf: inputFile)
-       // return savedData
-    //} catch {
-      //  return error.localizedDescription
-  //  }
-//}
 
 
