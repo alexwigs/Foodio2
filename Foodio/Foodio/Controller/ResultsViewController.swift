@@ -80,7 +80,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource {
         var cell = UITableViewCell()
         var food : String
         
-        if(z == "60805") {
+        if(z == "60546") {
         
             food = a [indexPath.row]
             
